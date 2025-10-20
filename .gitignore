@@ -1,0 +1,6 @@
+build
+
+# Vim files
+*~
+*.swp
+*.swo
