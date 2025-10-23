@@ -15,10 +15,10 @@ async def listDevices():
         await dev.update()
         print(dev.device_type, dev.host)
 
-global t_threshold 
-global h_threshold
-t_threshold = 20.0
-h_threshold = 60.0
+global TEMP_THRESHOLD 
+global HUMIDITY_THRESHOLD
+TEMP_THRESHOLD = 20.0
+HUMIDITY_THRESHOLD = 60.0
 
 async def handle_user_input():
     """Background task to handle user input without blocking"""
@@ -73,17 +73,19 @@ async def main():
 
             response_raw = sp.readline()
             response = response_raw.decode('utf-8').strip()
+            print(response)
 
 #            try:
-                # Temperature: 22.88 C Humidity: 60.47 %
 
-            parts = response.split(" ")
-            temp = float(parts[1])
-            humidity = float(parts[4])
 
+            # Temperature: 22.88 C Humidity: 60.47 %
             if "Temperature" in response:
 
-                if temp > t_threshold or humidity > h_threshold:
+                parts = response.split(" ")
+                temp = float(parts[1])
+                humidity = float(parts[4])
+
+                if temp > TEMP_THRESHOLD or humidity > HUMIDITY_THRESHOLD:
 
                     print("turning on fan")
                     await wallSwitch.turn_on()
