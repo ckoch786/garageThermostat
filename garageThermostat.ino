@@ -599,15 +599,15 @@ int main(void) {
         }
 
         // UART output
-        uart_puts("Temp: ");
+        uart_puts("Temperature: ");
         uart_print_float(sensor_data.temperature, 1);
 #if CELCIUS
-        uart_puts("C  Humid: ");
+        uart_puts(" C Humidity: ");
 #else
-        uart_puts("F  Humid: ");
+        uart_puts(" F Humidity: ");
 #endif
         uart_print_float(sensor_data.humidity, 1);
-        uart_puts("%  Time: ");
+        uart_puts(" % Time: ");
         uart_print_uint16(remaining);
         uart_puts("s\r\n");
       } else {

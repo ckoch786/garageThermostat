@@ -17,31 +17,37 @@ async def listDevices():
 
 global TEMP_THRESHOLD 
 global HUMIDITY_THRESHOLD
-TEMP_THRESHOLD = 20.0
+TEMP_THRESHOLD = 61.0
 HUMIDITY_THRESHOLD = 60.0
+
+paused = False
 
 async def handle_user_input():
     """Background task to handle user input without blocking"""
     global TEMP_THRESHOLD, HUMIDITY_THRESHOLD
     
-#:    while True:
-    try:
+    while True:
         print("\n[Press Enter to adjust thresholds]")
-        await ainput()  # Non-blocking wait for Enter
+        await ainput()  # Wait for Enter
         
-        temp_str = await ainput(f"New temperature threshold (current: {TEMP_THRESHOLD}): ")
-        if temp_str.strip():
-            TEMP_THRESHOLD = float(temp_str)
+        paused = True # ENTER pressed, stop main loop
         
-        humid_str = await ainput(f"New humidity threshold (current: {HUMIDITY_THRESHOLD}): ")
-        if humid_str.strip():
-            HUMIDITY_THRESHOLD = float(humid_str)
-        
-        print(f"Updated thresholds - Temp: {TEMP_THRESHOLD}°C, Humidity: {HUMIDITY_THRESHOLD}%")
-    except ValueError:
-        print("Invalid input, keeping current thresholds")
-    except Exception as e:
-        print(f"Input error: {e}")
+        try:
+            temp_str = await ainput(f"New temperature threshold (current: {TEMP_THRESHOLD}): ")
+            if temp_str.strip():
+                TEMP_THRESHOLD = float(temp_str)
+            
+            humid_str = await ainput(f"New humidity threshold (current: {HUMIDITY_THRESHOLD}): ")
+            if humid_str.strip():
+                HUMIDITY_THRESHOLD = float(humid_str)
+            
+            print(f"Updated thresholds - Temp: {TEMP_THRESHOLD}°C, Humidity: {HUMIDITY_THRESHOLD}%")
+        except ValueError:
+            print("Invalid input, keeping current thresholds")
+        except Exception as e:
+            print(f"Input error: {e}")
+        finally:
+            paused = False  # resume main loop
 
 async def main():
     # If need to find the host ip of the WallSwitch run this for now
@@ -66,15 +72,21 @@ async def main():
     wallSwitch = await Discover.discover_single("192.168.1.11")
 
     # Start input handler as backgroud task
-    #input_task = asyncio.create_task(handle_user_input())
+    asyncio.create_task(handle_user_input()) # background task
     # Read values before while
 
     # TODO ----------------------------------------------
     # Use interrupt for enter key set flag, then in while loop block program, get input and resume
 
+    # OR 
+    # CReate two threads, one for handling user input, the other processing. Join the threads at the end
+
     try:
         while True:
-
+            if paused:
+                await asyncio.sleep(0.1)
+                continue
+                
             #await handle_user_input()
             response_raw = sp.readline()
             response = response_raw.decode('utf-8').strip()
@@ -89,6 +101,7 @@ async def main():
             if "Temperature" in response:
 
                 parts = response.split(" ")
+                #print(parts)
                 temp = float(parts[1])
                 humidity = float(parts[4])
 
@@ -101,6 +114,8 @@ async def main():
                     await wallSwitch.turn_off()
 
                 await wallSwitch.update()
+            
+            await asyncio.sleep(1)
 
 #            except: (IndexError, ValueError) as e:
 #                print(f"Error parsing response: {response}")
