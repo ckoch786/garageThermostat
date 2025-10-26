@@ -22,4 +22,4 @@ jobs:
         # Repeat for other libraries if necessary
 
     - name: Build Sketch
-      run: arduino-cli compile --fqbn arduino:avr:uno your_sketch_folder/your_sketch.ino # Adjust FQBN and path
+      run: arduino-cli compile --fqbn arduino:avr:uno ./garageThermostat.ino # Adjust FQBN and path
