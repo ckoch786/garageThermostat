@@ -1,39 +1,38 @@
 #include "i2c.h"
 
-void initI2C(void) {
-                                     /* set pullups for SDA, SCL lines */
-  I2C_SDA_PORT |= ((1 << I2C_SDA) | (1 << I2C_SCL));
-  TWBR = 32;   /* set bit rate (p.242): 8MHz / (16+2*TWBR*1) ~= 100kHz */
-  TWCR |= (1 << TWEN);                                       /* enable */
+// ========== I2C Functions ==========
+void i2c_init(void) {
+  TWSR = 0x00;
+  TWBR = (uint8_t)TWI_FREQ;
+  TWCR = (1 << TWEN);
 }
 
-void i2cWaitForComplete(void) {
-  loop_until_bit_is_set(TWCR, TWINT);
+uint8_t i2c_start(void) {
+  TWCR = (1 << TWINT) | (1 << TWSTA) | (1 << TWEN);
+  while (!(TWCR & (1 << TWINT)));
+  return (TWSR & 0xF8);
 }
 
-void i2cStart(void) {
-  TWCR = (_BV(TWINT) | _BV(TWEN) | _BV(TWSTA));
-  i2cWaitForComplete();
+void i2c_stop(void) {
+  TWCR = (1 << TWINT) | (1 << TWSTO) | (1 << TWEN);
+  while (TWCR & (1 << TWSTO));
 }
 
-void i2cStop(void) {
-  TWCR = (_BV(TWINT) | _BV(TWEN) | _BV(TWSTO));
-}
-
-uint8_t i2cReadAck(void) {
-  TWCR = (_BV(TWINT) | _BV(TWEN) | _BV(TWEA));
-  i2cWaitForComplete();
-  return (TWDR);
-}
-
-uint8_t i2cReadNoAck(void) {
-  TWCR = (_BV(TWINT) | _BV(TWEN));
-  i2cWaitForComplete();
-  return (TWDR);
-}
-
-void i2cSend(uint8_t data) {
+uint8_t i2c_write(uint8_t data) {
   TWDR = data;
-  TWCR = (_BV(TWINT) | _BV(TWEN));                  /* init and enable */
-  i2cWaitForComplete();
+  TWCR = (1 << TWINT) | (1 << TWEN);
+  while (!(TWCR & (1 << TWINT)));
+  return (TWSR & 0xF8);
+}
+
+uint8_t i2c_read_ack(void) {
+  TWCR = (1 << TWINT) | (1 << TWEN) | (1 << TWEA);
+  while (!(TWCR & (1 << TWINT)));
+  return TWDR;
+}
+
+uint8_t i2c_read_nack(void) {
+  TWCR = (1 << TWINT) | (1 << TWEN);
+  while (!(TWCR & (1 << TWINT)));
+  return TWDR;
 }

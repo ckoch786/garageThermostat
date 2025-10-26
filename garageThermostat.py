@@ -104,6 +104,8 @@ async def main():
                 #print(parts)
                 temp = float(parts[1])
                 humidity = float(parts[4])
+                celcius = round((TEMP_THRESHOLD - 32) / (9/5), 1) # or 1.8 what is this number?
+                print(f"Current thresholds: {TEMP_THRESHOLD} F {celcius} C {HUMIDITY_THRESHOLD} %")
 
                 if temp > TEMP_THRESHOLD or humidity > HUMIDITY_THRESHOLD:
 
