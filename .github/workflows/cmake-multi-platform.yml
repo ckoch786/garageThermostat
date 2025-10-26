@@ -1,25 +1,43 @@
-name: Build Arduino Sketch for ATmega328P
+name: Build AVR Project for ATmega328P
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [ main, master, develop ]
+  pull_request:
+    branches: [ main, master, develop ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    
     steps:
-    - uses: actions/checkout@v4
-
-    - name: Install Arduino CLI
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Install AVR toolchain
       run: |
-        curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh
-        echo "$HOME/bin" >> $GITHUB_PATH
-
-    - name: Install Arduino AVR Core
-      run: arduino-cli core install arduino:avr
-
-    - name: Install Libraries (if needed)
+        sudo apt-get update
+        sudo apt-get install -y gcc-avr avr-libc binutils-avr
+    
+    - name: Verify toolchain installation
       run: |
-        arduino-cli lib install "Your Library Name" # Replace with actual library names
-        # Repeat for other libraries if necessary
-
-    - name: Build Sketch
-      run: arduino-cli compile --fqbn arduino:avr:uno ./garageThermostat.ino # Adjust FQBN and path
+        avr-gcc --version
+        avr-objcopy --version
+        avr-size --version
+    
+    - name: Compile project
+      run: |
+        # ATmega328P at 8MHz, 5V
+        avr-gcc -Wall -Os -DF_CPU=8000000UL -mmcu=atmega328p -o garageThermostat.elf garageThermostat.c
+        avr-objcopy -O ihex -R .eeprom garageThermostat.elf garageThermostat.hex
+        avr-size --format=avr --mcu=atmega328p garageThermostat.elf
+    
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      if: success()
+      with:
+        name: avr-build
+        path: |
+          *.hex
+          *.elf
+        retention-days: 30
