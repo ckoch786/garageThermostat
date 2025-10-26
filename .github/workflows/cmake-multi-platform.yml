@@ -33,7 +33,7 @@ jobs:
         avr-size --format=avr --mcu=atmega328p garageThermostat.elf
     
     - name: Upload build artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: success()
       with:
         name: avr-build
