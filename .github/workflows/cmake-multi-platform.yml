@@ -28,7 +28,7 @@ jobs:
     - name: Compile project
       run: |
         # ATmega328P at 8MHz, 5V
-        avr-gcc -Wall -Os -DF_CPU=8000000UL -mmcu=atmega328p -o garageThermostat.elf garageThermostat.c
+        avr-gcc -Wall -Os -DF_CPU=8000000UL -mmcu=atmega328p -o garageThermostat.elf garageThermostat.ino
         avr-objcopy -O ihex -R .eeprom garageThermostat.elf garageThermostat.hex
         avr-size --format=avr --mcu=atmega328p garageThermostat.elf
     
