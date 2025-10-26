@@ -1,0 +1,25 @@
+name: Build Arduino Sketch for ATmega328P
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install Arduino CLI
+      run: |
+        curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh
+        echo "$HOME/bin" >> $GITHUB_PATH
+
+    - name: Install Arduino AVR Core
+      run: arduino-cli core install arduino:avr
+
+    - name: Install Libraries (if needed)
+      run: |
+        arduino-cli lib install "Your Library Name" # Replace with actual library names
+        # Repeat for other libraries if necessary
+
+    - name: Build Sketch
+      run: arduino-cli compile --fqbn arduino:avr:uno your_sketch_folder/your_sketch.ino # Adjust FQBN and path
