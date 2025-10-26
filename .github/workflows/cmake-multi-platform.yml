@@ -9,6 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container:
+      image: alpine:latest
     
     steps:
     - name: Checkout repository
@@ -16,8 +18,8 @@ jobs:
     
     - name: Install AVR toolchain
       run: |
-        sudo apt-get update
-        sudo apt-get install -y gcc-avr avr-libc binutils-avr
+        apk update
+        apk add --no-cache gcc-avr avr-libc binutils-avr
     
     - name: Verify toolchain installation
       run: |
