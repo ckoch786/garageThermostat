@@ -63,6 +63,26 @@ void init_light_sensor_interrupt(void) {
 }
 
 // ========== ISRs ==========
+// #define ANALOG_COMP_vect_num  23
+// #define ANALOG_COMP_vect  _VECTOR(23)  /* Analog Comparator */
+ISR(ANALOG_COMP_vect) {
+  display_on = 1;
+
+}
+
+void analog_comp_init(void) {
+    // Set bandgap reference (1.1V) on negative input
+    ACSR &= ~(1 << ACBG);
+    
+    // Enable analog comparator interrupt
+    ACSR |= (1 << ACIE);
+    
+    // Set interrupt on rising edge (low to high transition)
+    ACSR |= (1 << ACIS1) | (1 << ACIS0);
+    
+    sei();
+}
+
 
 // Pin Change Interrupt - triggers on light sensor activity
 ISR(PCINT1_vect) {
@@ -95,7 +115,8 @@ int main(void) {
   // Initialize peripherals
   uart_init(9600);
   i2c_init();
-  adc_init();
+  //adc_init();
+  analog_comp_init();
   _delay_ms(100);
 
   uart_puts("Garage Control Center\r\n");
@@ -132,8 +153,8 @@ int main(void) {
   // Main loop
   while (1) {
     // Only update display when flag is set by interrupt
-    //if (needs_update && display_on) {
-    if(1) {
+    if (needs_update && display_on) {
+    //if(1) {
       needs_update = 0;  // Clear flag
       
       // Read sensor
