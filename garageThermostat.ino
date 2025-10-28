@@ -57,12 +57,6 @@ void init_timer1(void) {
   TIMSK1 = (1 << OCIE1A);  // Enable compare match interrupt
 }
 
-// ========== Pin Change Interrupt Setup ==========
-void init_light_sensor_interrupt(void) {
-  DDRC &= ~(1 << PC0);     // PC0 as input
-  PCMSK1 |= (1 << PCINT8); // Enable PCINT8 (PC0)
-  PCICR |= (1 << PCIE1);   // Enable PCINT1 interrupt group
-}
 
 // ========== ISRs ==========
 // #define ANALOG_COMP_vect_num  23
@@ -150,9 +144,6 @@ int main(void) {
   _delay_ms(2000);
   ssd1306_clear();
 
-  // Initialize interrupts
-  // TODO need to use the comparator to handle this instead.
-  init_light_sensor_interrupt();
   init_timer1();
   
   // Enable global interrupts
@@ -166,7 +157,11 @@ int main(void) {
     if (broadcast || (needs_update && display_on)) {
     //if(1) {
       needs_update = 0;  // Clear flag
-    
+
+        if(!(needs_update && display_on)) {
+          ssd1306_clear();
+        }
+
         // Read sensor
         if (sht41_read_measurement(&sensor_data)) 
         {
