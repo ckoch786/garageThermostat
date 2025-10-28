@@ -28,6 +28,8 @@
 volatile uint8_t display_on = 0;
 volatile uint16_t timer_seconds = 0;
 volatile uint8_t needs_update = 0;  // Flag for main loop
+volatile uint8_t broadcast = 0;
+volatile uint16_t broadcast_time_seconds = 0;
 
 
 // ========== Display Control Functions ==========
@@ -102,9 +104,17 @@ ISR(TIMER1_COMPA_vect) {
     timer_seconds++;
     if (timer_seconds >= DISPLAY_TIMEOUT_SEC) {
       disable_display();
-    } else {
+    }else {
       needs_update = 1;  // Update display every second
     }
+  }
+
+  // Broadcast timer
+  broadcast_time_seconds++;
+  if (broadcast_time_seconds % 10 == 0) { // broadcast every 10 seconds
+    broadcast = 1;
+  } else {
+    broadcast = 0;
   }
 }
 
@@ -153,38 +163,43 @@ int main(void) {
   // Main loop
   while (1) {
     // Only update display when flag is set by interrupt
-    if (needs_update && display_on) {
+    if (broadcast || (needs_update && display_on)) {
     //if(1) {
       needs_update = 0;  // Clear flag
-      
-      // Read sensor
-      if (sht41_read_measurement(&sensor_data)) {
-        // Clear and update display
-        ssd1306_clear();
+    
+        // Read sensor
+        if (sht41_read_measurement(&sensor_data)) 
+        {
+          uint8_t remaining = DISPLAY_TIMEOUT_SEC - timer_seconds;
+          if (!broadcast) 
+          {
+              // Clear and update display
+              ssd1306_clear();
 
-        // Display temperature
-        ssd1306_puts("TEMP:", 0, 1, 1);
-        ssd1306_print_float(sensor_data.temperature, 1, 0, 2, 1);
-#if CELCIUS
-        ssd1306_puts("C", 50, 2, 1);
-#else
-        ssd1306_puts("F", 50, 2, 1);
-#endif
+              // Display temperature
+              ssd1306_puts("TEMP:", 0, 1, 1);
+              ssd1306_print_float(sensor_data.temperature, 1, 0, 2, 1);
+      #if CELCIUS
+              ssd1306_puts("C", 50, 2, 1);
+      #else
+              ssd1306_puts("F", 50, 2, 1);
+      #endif
 
-        // Display humidity
-        ssd1306_puts("HUMID:", 0, 4, 1);
-        ssd1306_print_float(sensor_data.humidity, 1, 0, 5, 1);
-        ssd1306_puts("%", 50, 5, 1);
+              // Display humidity
+              ssd1306_puts("HUMID:", 0, 4, 1);
+              ssd1306_print_float(sensor_data.humidity, 1, 0, 5, 1);
+              ssd1306_puts("%", 50, 5, 1);
 
-        // Display timeout countdown
-        uint8_t remaining = DISPLAY_TIMEOUT_SEC - timer_seconds;
-        ssd1306_puts("TIME:", 0, 7, 1);
-        if (remaining < 10) {
-          ssd1306_putchar('0' + remaining, 1);
-        } else {
-          ssd1306_putchar('0' + (remaining / 10), 1);
-          ssd1306_putchar('0' + (remaining % 10), 1);
-        }
+              // Display timeout countdown
+              ssd1306_puts("TIME:", 0, 7, 1);
+              if (remaining < 10) {
+                ssd1306_putchar('0' + remaining, 1);
+              } else {
+                ssd1306_putchar('0' + (remaining / 10), 1);
+                ssd1306_putchar('0' + (remaining % 10), 1);
+              }
+          }
+     
 
         // UART output
         uart_puts("Temperature: ");
