@@ -11,25 +11,13 @@
 #include "i2c.h"
 #include "temperature_SHT41.h"
 #include "OLED_SSD1306.h"
+#include "display.h"
+#include "garageThermostat.h"
+
 
 struct display_control display_cntrl = {}; 
 
-// ========== Display Control Functions ==========
-void enable_display(struct display_control *dc) {
-  dc->display_on = 1;
-  dc->timer_seconds = 0;
-  TCNT1 = 0;
-  dc->needs_update = 1;  // Signal main loop to update
-}
 
-void disable_display(struct display_control *dc) {
-  if (dc->display_on) {
-    dc->display_on = 0;
-    dc->timer_seconds = 0;
-    TCNT1 = 0;
-    ssd1306_clear();  // Clear when turning off
-  }
-}
 
 // ========== Timer Setup ==========
 void init_timer1(void) {
