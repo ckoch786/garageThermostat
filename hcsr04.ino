@@ -32,26 +32,27 @@ uint32_t hcsr04_read(void)
   }
   
   // Measure echo pulse width
-  uint32_t timer = 0;
+  uint32_t duration = 0;
   while(hcsr04_trig_pin_output & (1 << hcsr04_echo_pin))
   {
-    timer++;
+    duration++;
     _delay_us(1);
-    if(timer > TIMEOUT_MAX) {
+    if(duration > TIMEOUT_MAX) {
       return 0; // Timeout protection
     }
   }
 
-  sprintf(buffer, "Timer value: %lu\n\r", timer);
+  sprintf(buffer, "Timer value: %lu\n\r", duration);
   uart_puts(buffer);
   
   // Calculate distance in cm
   // Speed of sound = 343 m/s = 0.0343 cm/us
   // Distance = (time * 0.0343) / 2
-  // With _delay_us(1) in loop, timer ≈ microseconds
-  uint32_t distance_cm = (timer * 343UL) / 20000UL;
-  sprintf(buffer, "Distance: %lu cm\n\r", distance_cm);
+  // With _delay_us(1) in loop, duration ≈ microseconds
+  // uint32_t distance_cm = (duration * 343UL) / 20000UL;
+  uint32_t distance_in = duration / 148UL;
+  sprintf(buffer, "Distance: %lu in\n\r", distance_in);
   uart_puts(buffer);
   
-  return distance_cm;
+  return distance_in;
 }
