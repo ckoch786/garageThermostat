@@ -1,0 +1,7 @@
+docker build -t avr-blinky-cicd .
+
+docker run --rm -v $(pwd):/work -w /work avr-blinky-cicd cmake -B build 
+docker run --rm -v $(pwd):/work -w /work avr-blinky-cicd cmake --build build 
+docker run --rm -v $(pwd):/work -w /work --device /dev/ttyACM0:/dev/ttyACM0 avr-blinky-cicd cmake --build build --target flash
+docker run --rm -v $(pwd):/work -w /work avr-blinky-cicd bash -c "rm -fr build"
+

@@ -1,0 +1,24 @@
+# From Windows in an Admin Terminal Session
+winget install --interactive --exact dorssel.usbipd-win
+
+cd "C:\Program Files\usbipd-win\"
+- Look for Arduino in the output, see example output find BUSID for next command
+.\usbipd.exe list
+
+## Example output
+❯ .\usbipd.exe list
+Connected:
+BUSID  VID:PID    DEVICE                                                        STATE
+... Other entries
+5-3    2341:0043  Arduino Uno (COM6)                                            Not shared
+
+
+- Make sure Arduino Studio is closed before running this, where 5-3 is the BUSID found in the previous step
+.\usbipd.exe bind --busid 5-3
+.\usbipd.exe attach --wsl --busid 5-3
+
+
+
+# From WSL
+sudo apt install linux-tools-generic hwdata
+sudo update-alternatives --install /usr/local/bin/usbip usbip /usr/lib/linux-tools/*-generic/usbip 20

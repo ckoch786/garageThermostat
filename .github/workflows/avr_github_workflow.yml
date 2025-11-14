@@ -1,0 +1,40 @@
+name: AVR Build
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+    
+    - name: Build Docker image
+      run: |
+        docker build -t avr-builder .
+    
+    - name: Build AVR project with CMake
+      run: |
+        docker run --rm -v ${{ github.workspace }}:/work avr-builder bash -c "
+          cmake -B build -S . && 
+          cmake --build build
+        "
+    
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: avr-firmware
+        path: |
+          build/*.hex
+          build/*.elf
+          build/*.map
+        if-no-files-found: warn

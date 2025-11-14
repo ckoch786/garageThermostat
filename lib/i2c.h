@@ -1,22 +1,35 @@
-// Functions for i2c communication
-#include <avr/io.h>
-#include "pinDefines.h"
+#ifndef I2C_H
+#define I2C_H
 
-void initI2C(void);
-    /* Sets pullups and initializes bus speed to 100kHz (at FCPU=8MHz) */
+// I2C definitions
+#define SCL_CLOCK 100000L
+#define TWI_FREQ ((F_CPU / SCL_CLOCK) - 16) / 2
 
-void i2cWaitForComplete(void);
-                       /* Waits until the hardware sets the TWINT flag */
+// SHT41 I2C address
+#define SHT41_ADDR 0x44
 
-void i2cStart(void);
-                               /* Sends a start condition (sets TWSTA) */
-void i2cStop(void);
-                                /* Sends a stop condition (sets TWSTO) */
+// SSD1306 I2C address
+#define SSD1306_ADDR 0x3C
 
-void i2cSend(uint8_t data);
-                   /* Loads data, sends it out, waiting for completion */
+// I2C status codes
+#define TW_START 0x08
+#define TW_REP_START 0x10
+#define TW_MT_SLA_ACK 0x18
+#define TW_MT_DATA_ACK 0x28
+#define TW_MR_SLA_ACK 0x40
+#define TW_MR_DATA_ACK 0x50
+#define TW_MR_DATA_NACK 0x58
 
-uint8_t i2cReadAck(void);
-              /* Read in from slave, sending ACK when done (sets TWEA) */
-uint8_t i2cReadNoAck(void);
-              /* Read in from slave, sending NOACK when done (no TWEA) */
+void i2c_init(void);
+
+uint8_t i2c_start(void);
+
+void i2c_stop(void);
+
+uint8_t i2c_write(uint8_t data);
+
+uint8_t i2c_read_ack(void);
+
+uint8_t i2c_read_nack(void);
+
+#endif
