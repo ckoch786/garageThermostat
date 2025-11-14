@@ -1,8 +1,8 @@
 #define F_CPU 16000000UL
-
-#include <avr/io.h>
+ 
 #include <util/delay.h>
 #include <stdint.h>
+#include <avr/io.h>
 #include <avr/pgmspace.h>
 #include <avr/interrupt.h>
 
@@ -14,6 +14,7 @@
 #include "display.h"
 #include "garageThermostat.h"
 #include "motionControl.h"
+#include "circularBuffer.h"
 
 
 // ========== Main Program ==========
@@ -26,20 +27,21 @@ int main(void) {
   i2c_init();
   //adc_init();
   analog_comp_init();
-  //_delay_ms(100);
-
-  uart_puts("Garage Control Center\r\n");
-
   hcsr04_init();
   motionControl_init();
+  init_timer1();
   // Initialize OLED
   ssd1306_init();
   ssd1306_clear();
+  // Enable global interrupts
+  sei();
 
+
+  uart_puts("Garage Control Center\r\n");
   // Display title
   ssd1306_puts("SHT41 SENSOR", 10, 0, 1);
 
-  // Soft reset sensor
+  // Soft reset temperature relative humidity sensor
   if (sht41_soft_reset()) {
     ssd1306_puts("INIT OK", 30, 1, 1);
     uart_puts("Sensor reset OK\r\n");
@@ -50,12 +52,6 @@ int main(void) {
 
   _delay_ms(2000);
   ssd1306_clear();
-
-  init_timer1();
-
-  // Enable global interrupts
-  sei();
-
   uart_puts("System initialized. Waiting for light trigger...\r\n");
   
   // Main loop
@@ -64,7 +60,7 @@ int main(void) {
     // Only update display when flag is set by interrupt
     // uint8_t displayOn = (needs_update && display_on);
     uint8_t displayOn = 0;
-      uint8_t remaining = DISPLAY_TIMEOUT_SEC - display_cntrl.timer_seconds;
+    uint8_t remaining = DISPLAY_TIMEOUT_SEC - display_cntrl.timer_seconds;
     if (display_cntrl.broadcast || displayOn) {
       display_cntrl.needs_update = 0;  // Clear flag
 
@@ -104,7 +100,8 @@ int main(void) {
           uart_puts("Measurement failed\r\n");
         }  // End if (!display_cntrl.broadcast) {
       }    // End if (sht41_read_measurement(&sensor_data)) {
-
+      
+      // Ultrasonic sensor
       uint32_t distance_cm = hcsr04_read();
 
       if (distance_cm <= 6) {
@@ -125,11 +122,15 @@ int main(void) {
       sprintf(buffer, "%lu in", distance_cm);
       ssd1306_puts(buffer, 100, 3, 1);
     }
-
+    struct CircularStringBuffer circularBuffer;
+    circularStringBuffer_init(&circularBuffer);
     // TODO change this to buffer and only print every so often
     // UART output
-    uart_puts("Temperature: ");
-    uart_print_float(sensor_data.temperature, 1);
+    char b[32];
+    sprintf(b, "Temperature: %f", sensor_data.temperature);
+    circularStringBuffer_push(&circularBuffer, b);
+    // uart_puts("Temperature: ");
+    // uart_print_float(sensor_data.temperature, 1);
 #if CELCIUS
     uart_puts(" C Humidity: ");
 #else
@@ -139,6 +140,13 @@ int main(void) {
     uart_puts(" % Time: ");
     uart_print_uint16(remaining);
     uart_puts("s\r\n");
+
+    //bool atTail = circularStringBuffer_at_tail(&circularBuffer);
+    if (circularBuffer.current_position == circularBuffer.tail)
+    {
+      uart_puts("circular buffer at tail");
+      circularStringBuffer_print(&circularBuffer);
+    }
 
     // TODO Low power idle - wait for interrupts
     _delay_ms(50);
