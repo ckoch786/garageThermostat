@@ -1,0 +1,5 @@
+/work/build-avr/CMakeFiles/garageThermostat.elf.dir
+/work/build-avr/CMakeFiles/flash.dir
+/work/build-avr/CMakeFiles/flash-isp.dir
+/work/build-avr/CMakeFiles/edit_cache.dir
+/work/build-avr/CMakeFiles/rebuild_cache.dir

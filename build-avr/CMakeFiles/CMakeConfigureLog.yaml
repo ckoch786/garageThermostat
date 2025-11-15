@@ -1,0 +1,186 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      The target system is: Generic -  - 
+      The host system is: Linux - 6.6.87.2-microsoft-standard-WSL2 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/avr-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /work/build-avr/CMakeFiles/3.31.6/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1237 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      avr-gcc (GCC) 14.2.0
+      Copyright (C) 2024 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:13 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/work/build-avr/CMakeFiles/CMakeScratch/TryCompile-6K0d6N"
+      binary: "/work/build-avr/CMakeFiles/CMakeScratch/TryCompile-6K0d6N"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/work/build-avr/CMakeFiles/CMakeScratch/TryCompile-6K0d6N'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ed673/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ed673.dir/build.make CMakeFiles/cmTC_ed673.dir/build
+        gmake[1]: Entering directory '/work/build-avr/CMakeFiles/CMakeScratch/TryCompile-6K0d6N'
+        Building C object CMakeFiles/cmTC_ed673.dir/CMakeCCompilerABI.c.obj
+        /usr/bin/avr-gcc   -v -o CMakeFiles/cmTC_ed673.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        Reading specs from /usr/lib/gcc/avr/14.2.0/device-specs/specs-avr2
+        COLLECT_GCC=/usr/bin/avr-gcc
+        Target: avr
+        Configured with: ../src/configure -v --enable-languages=c,c++,rust --prefix=/usr/lib --infodir=/usr/share/info --mandir=/usr/share/man --bindir=/usr/bin --libexecdir=/usr/lib --libdir=/usr/lib --enable-shared --with-system-zlib --enable-long-long --enable-nls --without-included-gettext --disable-libssp --disable-libcc1 --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=avr --enable-host-pie ASFLAGS= ASFLAGS_FOR_BUILD= CFLAGS='-g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/build/reproducible-path/gcc-avr-14.2.0=. -fstack-protector-strong -fstack-clash-protection -Wformat  -fcf-protection' 'CFLAGS_FOR_BUILD=-g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/build/reproducible-path/gcc-avr-14.2.0=. -fstack-protector-strong -fstack-clash-protection -Wformat  -fcf-protection' CPPFLAGS='-Wdate-time -D_FORTIFY_SOURCE=2' 'CPPFLAGS_FOR_BUILD=-Wdate-time -D_FORTIFY_SOURCE=2' CXXFLAGS='-g -O2 -ffile-prefix-map=/build/reproducible-path/gcc-avr-14.2.0=. -fstack-protector-strong -fstack-clash-protection -Wformat  -fcf-protection' 'CXXFLAGS_FOR_BUILD=-g -O2 -ffile-prefix-map=/build/reproducible-path/gcc-avr-14.2.0=. -fstack-protector-strong -fstack-clash-protection -Wformat  -fcf-protection' DFLAGS=-frelease DFLAGS_FOR_BUILD=-frelease FCFLAGS='-g -O2 -ffile-prefix-map=/build/reproducible-path/gcc-avr-14.2.0=. -fstack-protector-strong -fstack-clash-protection -fcf-protection' 'FCFLAGS_FOR_BUILD=-g -O2 -ffile-prefix-map=/build/reproducible-path/gcc-avr-14.2.0=. -fstack-protector-strong -fstack-clash-protection -fcf-protection' FFLAGS='-g -O2 -ffile-prefix-map=/build/reproducible-path/gcc-avr-14.2.0=. -fstack-protector-strong -fstack-clash-protection -fcf-protection' 'FFLAGS_FOR_BUILD=-g -O2 -ffile-prefix-map=/build/reproducible-path/gcc-avr-14.2.0=. -fstack-protector-strong -fstack-clash-protection -fcf-protection' LDFLAGS='-Wl,-z,relro -Wl,-z,now' 'LDFLAGS_FOR_BUILD=-Wl,-z,relro -Wl,-z,now' OBJCFLAGS='-g -O2 -ffile-prefix-map=/build/reproducible-path/gcc-avr-14.2.0=. -fstack-protector-strong -fstack-clash-protection -Wformat  -fcf-protection' 'OBJCFLAGS_FOR_BUILD=-g -O2 -ffile-prefix-map=/build/reproducible-path/gcc-avr-14.2.0=. -fstack-protector-strong -fstack-clash-protection -Wformat  -fcf-protection' OBJCXXFLAGS='-g -O2 -ffile-prefix-map=/build/reproducible-path/gcc-avr-14.2.0=. -fstack-protector-strong -fstack-clash-protection -Wformat  -fcf-protection' 'OBJCXXFLAGS_FOR_BUILD=-g -O2 -ffile-prefix-map=/build/reproducible-path/gcc-avr-14.2.0=. -fstack-protector-strong -fstack-clash-protection -Wformat  -fcf-protection'
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 14.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ed673.dir/CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles/cmTC_ed673.dir/'
+         /usr/lib/gcc/avr/14.2.0/cc1 -quiet -v /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -mn-flash=6 -mskip-bug -quiet -dumpdir CMakeFiles/cmTC_ed673.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdouble=32 -mlong-double=64 -version -o /tmp/cclC7qfF.s
+        GNU C17 (GCC) version 14.2.0 (avr)
+        	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        warning: MPFR header version 4.2.1 differs from library version 4.2.2.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/avr/14.2.0/../../../avr/sys-include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/avr/14.2.0/include
+         /usr/lib/gcc/avr/14.2.0/include-fixed
+         /usr/lib/gcc/avr/14.2.0/../../../avr/include
+        End of search list.
+        Compiler executable checksum: 96b695ed744c081991ff1c63ee5470a9
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ed673.dir/CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles/cmTC_ed673.dir/'
+         /usr/lib/gcc/avr/14.2.0/../../../avr/bin/as -mmcu=avr2 -mgcc-isr -o CMakeFiles/cmTC_ed673.dir/CMakeCCompilerABI.c.obj /tmp/cclC7qfF.s
+        COMPILER_PATH=/usr/lib/gcc/avr/14.2.0/:/usr/lib/gcc/avr/14.2.0/:/usr/lib/gcc/avr/:/usr/lib/gcc/avr/14.2.0/:/usr/lib/gcc/avr/:/usr/lib/gcc/avr/14.2.0/../../../avr/bin/
+        LIBRARY_PATH=/usr/lib/gcc/avr/14.2.0/:/usr/lib/gcc/avr/14.2.0/../../../avr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ed673.dir/CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles/cmTC_ed673.dir/CMakeCCompilerABI.c.'
+        Linking C static library libcmTC_ed673.a
+        /usr/bin/cmake -P CMakeFiles/cmTC_ed673.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed673.dir/link.txt --verbose=1
+        /usr/bin/avr-ar qc libcmTC_ed673.a CMakeFiles/cmTC_ed673.dir/CMakeCCompilerABI.c.obj
+        /usr/bin/avr-ranlib libcmTC_ed673.a
+        gmake[1]: Leaving directory '/work/build-avr/CMakeFiles/CMakeScratch/TryCompile-6K0d6N'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/avr/14.2.0/include]
+          add: [/usr/lib/gcc/avr/14.2.0/include-fixed]
+          add: [/usr/lib/gcc/avr/14.2.0/../../../avr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/avr/14.2.0/include] ==> [/usr/lib/gcc/avr/14.2.0/include]
+        collapse include dir [/usr/lib/gcc/avr/14.2.0/include-fixed] ==> [/usr/lib/gcc/avr/14.2.0/include-fixed]
+        collapse include dir [/usr/lib/gcc/avr/14.2.0/../../../avr/include] ==> [/usr/lib/avr/include]
+        implicit include dirs: [/usr/lib/gcc/avr/14.2.0/include;/usr/lib/gcc/avr/14.2.0/include-fixed;/usr/lib/avr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/work/build-avr/CMakeFiles/CMakeScratch/TryCompile-6K0d6N']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ed673/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_ed673.dir/build.make CMakeFiles/cmTC_ed673.dir/build]
+        ignore line: [gmake[1]: Entering directory '/work/build-avr/CMakeFiles/CMakeScratch/TryCompile-6K0d6N']
+        ignore line: [Building C object CMakeFiles/cmTC_ed673.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/usr/bin/avr-gcc   -v -o CMakeFiles/cmTC_ed673.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [Reading specs from /usr/lib/gcc/avr/14.2.0/device-specs/specs-avr2]
+        ignore line: [COLLECT_GCC=/usr/bin/avr-gcc]
+        ignore line: [Target: avr]
+        ignore line: [Configured with: ../src/configure -v --enable-languages=c c++ rust --prefix=/usr/lib --infodir=/usr/share/info --mandir=/usr/share/man --bindir=/usr/bin --libexecdir=/usr/lib --libdir=/usr/lib --enable-shared --with-system-zlib --enable-long-long --enable-nls --without-included-gettext --disable-libssp --disable-libcc1 --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=avr --enable-host-pie ASFLAGS= ASFLAGS_FOR_BUILD= CFLAGS='-g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/build/reproducible-path/gcc-avr-14.2.0=. -fstack-protector-strong -fstack-clash-protection -Wformat  -fcf-protection' 'CFLAGS_FOR_BUILD=-g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/build/reproducible-path/gcc-avr-14.2.0=. -fstack-protector-strong -fstack-clash-protection -Wformat  -fcf-protection' CPPFLAGS='-Wdate-time -D_FORTIFY_SOURCE=2' 'CPPFLAGS_FOR_BUILD=-Wdate-time -D_FORTIFY_SOURCE=2' CXXFLAGS='-g -O2 -ffile-prefix-map=/build/reproducible-path/gcc-avr-14.2.0=. -fstack-protector-strong -fstack-clash-protection -Wformat  -fcf-protection' 'CXXFLAGS_FOR_BUILD=-g -O2 -ffile-prefix-map=/build/reproducible-path/gcc-avr-14.2.0=. -fstack-protector-strong -fstack-clash-protection -Wformat  -fcf-protection' DFLAGS=-frelease DFLAGS_FOR_BUILD=-frelease FCFLAGS='-g -O2 -ffile-prefix-map=/build/reproducible-path/gcc-avr-14.2.0=. -fstack-protector-strong -fstack-clash-protection -fcf-protection' 'FCFLAGS_FOR_BUILD=-g -O2 -ffile-prefix-map=/build/reproducible-path/gcc-avr-14.2.0=. -fstack-protector-strong -fstack-clash-protection -fcf-protection' FFLAGS='-g -O2 -ffile-prefix-map=/build/reproducible-path/gcc-avr-14.2.0=. -fstack-protector-strong -fstack-clash-protection -fcf-protection' 'FFLAGS_FOR_BUILD=-g -O2 -ffile-prefix-map=/build/reproducible-path/gcc-avr-14.2.0=. -fstack-protector-strong -fstack-clash-protection -fcf-protection' LDFLAGS='-Wl -z relro -Wl -z now' 'LDFLAGS_FOR_BUILD=-Wl -z relro -Wl -z now' OBJCFLAGS='-g -O2 -ffile-prefix-map=/build/reproducible-path/gcc-avr-14.2.0=. -fstack-protector-strong -fstack-clash-protection -Wformat  -fcf-protection' 'OBJCFLAGS_FOR_BUILD=-g -O2 -ffile-prefix-map=/build/reproducible-path/gcc-avr-14.2.0=. -fstack-protector-strong -fstack-clash-protection -Wformat  -fcf-protection' OBJCXXFLAGS='-g -O2 -ffile-prefix-map=/build/reproducible-path/gcc-avr-14.2.0=. -fstack-protector-strong -fstack-clash-protection -Wformat  -fcf-protection' 'OBJCXXFLAGS_FOR_BUILD=-g -O2 -ffile-prefix-map=/build/reproducible-path/gcc-avr-14.2.0=. -fstack-protector-strong -fstack-clash-protection -Wformat  -fcf-protection']
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ed673.dir/CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles/cmTC_ed673.dir/']
+        ignore line: [ /usr/lib/gcc/avr/14.2.0/cc1 -quiet -v /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -mn-flash=6 -mskip-bug -quiet -dumpdir CMakeFiles/cmTC_ed673.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdouble=32 -mlong-double=64 -version -o /tmp/cclC7qfF.s]
+        ignore line: [GNU C17 (GCC) version 14.2.0 (avr)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [warning: MPFR header version 4.2.1 differs from library version 4.2.2.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/avr/14.2.0/../../../avr/sys-include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/avr/14.2.0/include]
+        ignore line: [ /usr/lib/gcc/avr/14.2.0/include-fixed]
+        ignore line: [ /usr/lib/gcc/avr/14.2.0/../../../avr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 96b695ed744c081991ff1c63ee5470a9]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ed673.dir/CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles/cmTC_ed673.dir/']
+        ignore line: [ /usr/lib/gcc/avr/14.2.0/../../../avr/bin/as -mmcu=avr2 -mgcc-isr -o CMakeFiles/cmTC_ed673.dir/CMakeCCompilerABI.c.obj /tmp/cclC7qfF.s]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/avr/14.2.0/:/usr/lib/gcc/avr/14.2.0/:/usr/lib/gcc/avr/:/usr/lib/gcc/avr/14.2.0/:/usr/lib/gcc/avr/:/usr/lib/gcc/avr/14.2.0/../../../avr/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/avr/14.2.0/:/usr/lib/gcc/avr/14.2.0/../../../avr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ed673.dir/CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles/cmTC_ed673.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C static library libcmTC_ed673.a]
+        ignore line: [/usr/bin/cmake -P CMakeFiles/cmTC_ed673.dir/cmake_clean_target.cmake]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed673.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/avr-ar qc libcmTC_ed673.a CMakeFiles/cmTC_ed673.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/usr/bin/avr-ranlib libcmTC_ed673.a]
+        ignore line: [gmake[1]: Leaving directory '/work/build-avr/CMakeFiles/CMakeScratch/TryCompile-6K0d6N']
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+...

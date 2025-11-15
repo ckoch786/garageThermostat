@@ -1,0 +1,17 @@
+# Dockerfile for building and running Unity C tests on the host (not AVR)
+FROM debian:stable-slim
+
+# Install build tools and git
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    build-essential \
+    cmake \
+    git \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set workdir
+WORKDIR /work
+
+# Default command: print help
+CMD ["/bin/bash"]

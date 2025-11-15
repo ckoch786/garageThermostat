@@ -1,0 +1,1017 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+                              CMakeFiles/garageThermostat.elf.dir/avr/garageThermostat.c.obj (__udivmodqi4)
+/usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+                              CMakeFiles/garageThermostat.elf.dir/avr/motionControl.c.obj (__udivmodhi4)
+/usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+                              CMakeFiles/garageThermostat.elf.dir/avr/hcsr04.c.obj (__udivmodsi4)
+/usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodsi4.o)
+                              CMakeFiles/garageThermostat.elf.dir/avr/OLED_SSD1306.c.obj (__divmodsi4)
+/usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_negsi2.o)
+                              /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodsi4.o) (__negsi2)
+/usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega328p.o (exit)
+/usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+                              CMakeFiles/garageThermostat.elf.dir/lib/circularBuffer.c.obj (__do_copy_data)
+/usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+                              CMakeFiles/garageThermostat.elf.dir/avr/motionControl.c.obj (__do_clear_bss)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(addsf3.o)
+                              CMakeFiles/garageThermostat.elf.dir/avr/OLED_SSD1306.c.obj (__subsf3)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(addsf3x.o)
+                              /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(addsf3.o) (__addsf3x)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(cmpsf2.o)
+                              CMakeFiles/garageThermostat.elf.dir/avr/temperature_SHT41.c.obj (__ltsf2)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(divsf3.o)
+                              CMakeFiles/garageThermostat.elf.dir/avr/temperature_SHT41.c.obj (__divsf3)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(divsf3x.o)
+                              /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(divsf3.o) (__divsf3x)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fixsfsi.o)
+                              CMakeFiles/garageThermostat.elf.dir/avr/OLED_SSD1306.c.obj (__fixsfsi)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+                              /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fixsfsi.o) (__fixunssfsi)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(floatsisf.o)
+                              CMakeFiles/garageThermostat.elf.dir/avr/temperature_SHT41.c.obj (__floatunsisf)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_cmp.o)
+                              /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(cmpsf2.o) (__fp_cmp)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_inf.o)
+                              /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_inf)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_nan.o)
+                              /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_nan)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_pscA.o)
+                              /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_pscA)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_pscB.o)
+                              /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_pscB)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_round.o)
+                              /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(addsf3.o) (__fp_round)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_split3.o)
+                              /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_split3)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_zero.o)
+                              /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_zero)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(gesf2.o)
+                              CMakeFiles/garageThermostat.elf.dir/avr/temperature_SHT41.c.obj (__gtsf2)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(mulsf3.o)
+                              CMakeFiles/garageThermostat.elf.dir/avr/OLED_SSD1306.c.obj (__mulsf3)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                              /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(mulsf3.o) (__mulsf3x)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strncpy.o)
+                              CMakeFiles/garageThermostat.elf.dir/lib/circularBuffer.c.obj (strncpy)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(printf.o)
+                              CMakeFiles/garageThermostat.elf.dir/lib/circularBuffer.c.obj (printf)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(sprintf.o)
+                              CMakeFiles/garageThermostat.elf.dir/avr/garageThermostat.c.obj (sprintf)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                              /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(printf.o) (vfprintf)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                              /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o) (strnlen_P)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen.o)
+                              /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o) (strnlen)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(fputc.o)
+                              /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o) (fputc)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(iob.o)
+                              /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(printf.o) (__iob)
+/usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+                              /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o) (__ultoa_invert)
+/usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
+                              /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(printf.o) (__prologue_saves__)
+/usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
+                              /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(printf.o) (__epilogue_restores__)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega328p.o
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega328p.o
+ .text          0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/lib/circularBuffer.c.obj
+ .data          0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/lib/circularBuffer.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/lib/circularBuffer.c.obj
+ .text.circularStringBuffer_at_tail
+                0x00000000        0xe CMakeFiles/garageThermostat.elf.dir/lib/circularBuffer.c.obj
+ .text          0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/garageThermostat.c.obj
+ .data          0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/garageThermostat.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/garageThermostat.c.obj
+ .text          0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/OLED_SSD1306.c.obj
+ .data          0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/OLED_SSD1306.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/OLED_SSD1306.c.obj
+ .text          0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/adc.c.obj
+ .data          0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/adc.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/adc.c.obj
+ .text.adc_init
+                0x00000000       0x20 CMakeFiles/garageThermostat.elf.dir/avr/adc.c.obj
+ .text          0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/display.c.obj
+ .data          0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/display.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/display.c.obj
+ .text          0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/hcsr04.c.obj
+ .data          0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/hcsr04.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/hcsr04.c.obj
+ .text          0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/i2c.c.obj
+ .data          0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/i2c.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/i2c.c.obj
+ .text          0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/motionControl.c.obj
+ .data          0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/motionControl.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/motionControl.c.obj
+ .text          0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/temperature_SHT41.c.obj
+ .data          0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/temperature_SHT41.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/temperature_SHT41.c.obj
+ .text          0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/uart.c.obj
+ .data          0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/uart.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/garageThermostat.elf.dir/avr/uart.c.obj
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodsi4.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodsi4.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodsi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodsi4.o)
+ .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodsi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodsi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodsi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodsi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodsi4.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_negsi2.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_negsi2.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_negsi2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_negsi2.o)
+ .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_negsi2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_negsi2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_negsi2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_negsi2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_negsi2.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(addsf3.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(addsf3.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(addsf3.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(addsf3x.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(addsf3x.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(addsf3x.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(cmpsf2.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(cmpsf2.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(cmpsf2.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(divsf3.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(divsf3.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(divsf3.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(divsf3x.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(divsf3x.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(divsf3x.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fixsfsi.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fixsfsi.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fixsfsi.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(floatsisf.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(floatsisf.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(floatsisf.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_cmp.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_cmp.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_cmp.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_inf.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_inf.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_inf.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_nan.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_nan.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_nan.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_pscA.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_pscA.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_pscA.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_pscB.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_pscB.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_pscB.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_round.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_round.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_round.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_split3.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_split3.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_split3.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_zero.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_zero.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_zero.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(gesf2.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(gesf2.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(gesf2.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(mulsf3.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(mulsf3.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(mulsf3.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(mulsf3x.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(mulsf3x.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(mulsf3x.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strncpy.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strncpy.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strncpy.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(printf.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(printf.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(printf.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(sprintf.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(sprintf.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(sprintf.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(fputc.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(fputc.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(fputc.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(iob.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(iob.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.div
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.div
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00008000         xr
+data             0x00800100         0x00000800         rw!x
+eeprom           0x00810000         0x00000400         rw!x
+fuse             0x00820000         0x00000003         rw!x
+lock             0x00830000         0x00000400         rw!x
+signature        0x00840000         0x00000400         rw!x
+user_signatures  0x00850000         0x00000400         rw!x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega328p.o
+LOAD CMakeFiles/garageThermostat.elf.dir/lib/circularBuffer.c.obj
+LOAD CMakeFiles/garageThermostat.elf.dir/avr/garageThermostat.c.obj
+LOAD CMakeFiles/garageThermostat.elf.dir/avr/OLED_SSD1306.c.obj
+LOAD CMakeFiles/garageThermostat.elf.dir/avr/adc.c.obj
+LOAD CMakeFiles/garageThermostat.elf.dir/avr/display.c.obj
+LOAD CMakeFiles/garageThermostat.elf.dir/avr/hcsr04.c.obj
+LOAD CMakeFiles/garageThermostat.elf.dir/avr/i2c.c.obj
+LOAD CMakeFiles/garageThermostat.elf.dir/avr/motionControl.c.obj
+LOAD CMakeFiles/garageThermostat.elf.dir/avr/temperature_SHT41.c.obj
+LOAD CMakeFiles/garageThermostat.elf.dir/avr/uart.c.obj
+START GROUP
+LOAD /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a
+LOAD /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a
+LOAD /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a
+LOAD /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega328p.a
+END GROUP
+                [0x00000000]                      __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
+                [0x00008000]                      __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                [0x00800100]                      __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800060
+                [0x00000800]                      __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                [0x00000400]                      __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000003]                      __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                        __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                        __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                        __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x1bea
+ *(.vectors)
+ .vectors       0x00000000       0x68 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega328p.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x00000068                        . = ALIGN (0x2)
+                0x00000068                        __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000068        0x0 linker stubs
+ *(.trampolines*)
+                0x00000068                        __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem.*)
+ .progmem.data.font5x7
+                0x00000068      0x127 CMakeFiles/garageThermostat.elf.dir/avr/OLED_SSD1306.c.obj
+                0x00000068                font5x7
+                0x00000190                        . = ALIGN (0x2)
+ *fill*         0x0000018f        0x1 
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000190                        __ctors_start = .
+ *(.ctors)
+                0x00000190                        __ctors_end = .
+                0x00000190                        __dtors_start = .
+ *(.dtors)
+                0x00000190                        __dtors_end = .
+ SORT_BY_NAME(*)(.ctors)
+ SORT_BY_NAME(*)(.dtors)
+ *(.init0)
+ .init0         0x00000190        0x0 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega328p.o
+                0x00000190                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000190        0xc /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000019c       0x16 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+                0x0000019c                __do_copy_data
+ .init4         0x000001b2       0x10 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+                0x000001b2                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000001c2        0x8 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega328p.o
+ *(.init9)
+ *(.text)
+ .text          0x000001ca        0x4 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega328p.o
+                0x000001ca                __vector_22
+                0x000001ca                __vector_1
+                0x000001ca                __vector_24
+                0x000001ca                __vector_12
+                0x000001ca                __bad_interrupt
+                0x000001ca                __vector_6
+                0x000001ca                __vector_3
+                0x000001ca                __vector_25
+                0x000001ca                __vector_13
+                0x000001ca                __vector_17
+                0x000001ca                __vector_19
+                0x000001ca                __vector_7
+                0x000001ca                __vector_5
+                0x000001ca                __vector_9
+                0x000001ca                __vector_2
+                0x000001ca                __vector_21
+                0x000001ca                __vector_15
+                0x000001ca                __vector_8
+                0x000001ca                __vector_14
+                0x000001ca                __vector_10
+                0x000001ca                __vector_16
+                0x000001ca                __vector_18
+                0x000001ca                __vector_20
+                0x000001ce                        . = ALIGN (0x2)
+ *(.text.*)
+ .text.circularStringBuffer_init
+                0x000001ce        0xc CMakeFiles/garageThermostat.elf.dir/lib/circularBuffer.c.obj
+                0x000001ce                circularStringBuffer_init
+ .text.circularStringBuffer_push
+                0x000001da       0x46 CMakeFiles/garageThermostat.elf.dir/lib/circularBuffer.c.obj
+                0x000001da                circularStringBuffer_push
+ .text.circularStringBuffer_print
+                0x00000220       0x54 CMakeFiles/garageThermostat.elf.dir/lib/circularBuffer.c.obj
+                0x00000220                circularStringBuffer_print
+ .text.startup.main
+                0x00000274      0x306 CMakeFiles/garageThermostat.elf.dir/avr/garageThermostat.c.obj
+                0x00000274                main
+ .text.ssd1306_command
+                0x0000057a       0x20 CMakeFiles/garageThermostat.elf.dir/avr/OLED_SSD1306.c.obj
+                0x0000057a                ssd1306_command
+ .text.ssd1306_data
+                0x0000059a       0x20 CMakeFiles/garageThermostat.elf.dir/avr/OLED_SSD1306.c.obj
+                0x0000059a                ssd1306_data
+ .text.ssd1306_init
+                0x000005ba       0xa8 CMakeFiles/garageThermostat.elf.dir/avr/OLED_SSD1306.c.obj
+                0x000005ba                ssd1306_init
+ .text.ssd1306_clear
+                0x00000662       0x30 CMakeFiles/garageThermostat.elf.dir/avr/OLED_SSD1306.c.obj
+                0x00000662                ssd1306_clear
+ .text.ssd1306_set_position
+                0x00000692       0x22 CMakeFiles/garageThermostat.elf.dir/avr/OLED_SSD1306.c.obj
+                0x00000692                ssd1306_set_position
+ .text.ssd1306_putchar
+                0x000006b4       0x98 CMakeFiles/garageThermostat.elf.dir/avr/OLED_SSD1306.c.obj
+                0x000006b4                ssd1306_putchar
+ .text.ssd1306_puts
+                0x0000074c       0x36 CMakeFiles/garageThermostat.elf.dir/avr/OLED_SSD1306.c.obj
+                0x0000074c                ssd1306_puts
+ .text.ssd1306_print_float
+                0x00000782      0x194 CMakeFiles/garageThermostat.elf.dir/avr/OLED_SSD1306.c.obj
+                0x00000782                ssd1306_print_float
+ .text.crc8     0x00000916       0x30 CMakeFiles/garageThermostat.elf.dir/avr/OLED_SSD1306.c.obj
+                0x00000916                crc8
+ .text.adc_read
+                0x00000946       0x32 CMakeFiles/garageThermostat.elf.dir/avr/adc.c.obj
+                0x00000946                adc_read
+ .text.enable_display
+                0x00000978       0x16 CMakeFiles/garageThermostat.elf.dir/avr/display.c.obj
+                0x00000978                enable_display
+ .text.disable_display
+                0x0000098e       0x1c CMakeFiles/garageThermostat.elf.dir/avr/display.c.obj
+                0x0000098e                disable_display
+ .text.hcsr04_init
+                0x000009aa        0x8 CMakeFiles/garageThermostat.elf.dir/avr/hcsr04.c.obj
+                0x000009aa                hcsr04_init
+ .text.hcsr04_read
+                0x000009b2      0x114 CMakeFiles/garageThermostat.elf.dir/avr/hcsr04.c.obj
+                0x000009b2                hcsr04_read
+ .text.i2c_init
+                0x00000ac6       0x12 CMakeFiles/garageThermostat.elf.dir/avr/i2c.c.obj
+                0x00000ac6                i2c_init
+ .text.i2c_start
+                0x00000ad8       0x16 CMakeFiles/garageThermostat.elf.dir/avr/i2c.c.obj
+                0x00000ad8                i2c_start
+ .text.i2c_stop
+                0x00000aee       0x10 CMakeFiles/garageThermostat.elf.dir/avr/i2c.c.obj
+                0x00000aee                i2c_stop
+ .text.i2c_write
+                0x00000afe       0x1a CMakeFiles/garageThermostat.elf.dir/avr/i2c.c.obj
+                0x00000afe                i2c_write
+ .text.i2c_read_ack
+                0x00000b18       0x14 CMakeFiles/garageThermostat.elf.dir/avr/i2c.c.obj
+                0x00000b18                i2c_read_ack
+ .text.i2c_read_nack
+                0x00000b2c       0x14 CMakeFiles/garageThermostat.elf.dir/avr/i2c.c.obj
+                0x00000b2c                i2c_read_nack
+ .text.motionControl_init
+                0x00000b40        0x4 CMakeFiles/garageThermostat.elf.dir/avr/motionControl.c.obj
+                0x00000b40                motionControl_init
+ .text.motionControl_toggleIndicator
+                0x00000b44       0x18 CMakeFiles/garageThermostat.elf.dir/avr/motionControl.c.obj
+                0x00000b44                motionControl_toggleIndicator
+ .text.init_timer1
+                0x00000b5c       0x1e CMakeFiles/garageThermostat.elf.dir/avr/motionControl.c.obj
+                0x00000b5c                init_timer1
+ .text.__vector_23
+                0x00000b7a        0xc CMakeFiles/garageThermostat.elf.dir/avr/motionControl.c.obj
+                0x00000b7a                __vector_23
+ .text.analog_comp_init
+                0x00000b86       0x16 CMakeFiles/garageThermostat.elf.dir/avr/motionControl.c.obj
+                0x00000b86                analog_comp_init
+ .text.__vector_4
+                0x00000b9c       0x5c CMakeFiles/garageThermostat.elf.dir/avr/motionControl.c.obj
+                0x00000b9c                __vector_4
+ .text.__vector_11
+                0x00000bf8       0xac CMakeFiles/garageThermostat.elf.dir/avr/motionControl.c.obj
+                0x00000bf8                __vector_11
+ .text.sht41_soft_reset
+                0x00000ca4       0x38 CMakeFiles/garageThermostat.elf.dir/avr/temperature_SHT41.c.obj
+                0x00000ca4                sht41_soft_reset
+ .text.sht41_read_measurement
+                0x00000cdc      0x1b6 CMakeFiles/garageThermostat.elf.dir/avr/temperature_SHT41.c.obj
+                0x00000cdc                sht41_read_measurement
+ .text.uart_init
+                0x00000e92       0x2a CMakeFiles/garageThermostat.elf.dir/avr/uart.c.obj
+                0x00000e92                uart_init
+ .text.uart_putchar
+                0x00000ebc        0xe CMakeFiles/garageThermostat.elf.dir/avr/uart.c.obj
+                0x00000ebc                uart_putchar
+ .text.uart_puts
+                0x00000eca       0x18 CMakeFiles/garageThermostat.elf.dir/avr/uart.c.obj
+                0x00000eca                uart_puts
+ .text.uart_print_uint16
+                0x00000ee2       0x68 CMakeFiles/garageThermostat.elf.dir/avr/uart.c.obj
+                0x00000ee2                uart_print_uint16
+ .text.uart_print_float
+                0x00000f4a      0x142 CMakeFiles/garageThermostat.elf.dir/avr/uart.c.obj
+                0x00000f4a                uart_print_float
+ .text.libgcc.div
+                0x0000108c       0x18 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+                0x0000108c                __udivmodqi4
+ .text.libgcc.div
+                0x000010a4       0x28 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+                0x000010a4                __udivmodhi4
+ .text.libgcc.div
+                0x000010cc       0x44 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+                0x000010cc                __udivmodsi4
+ .text.libgcc.div
+                0x00001110       0x2e /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodsi4.o)
+                0x00001110                __divmodsi4
+ .text.libgcc.div
+                0x0000113e       0x10 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_negsi2.o)
+                0x0000113e                __negsi2
+ .text.avr-libc.fplib
+                0x0000114e        0xe /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(addsf3.o)
+                0x0000114e                __subsf3
+                0x00001150                __addsf3
+ .text.avr-libc.fplib
+                0x0000115c       0xcc /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(addsf3x.o)
+                0x0000117e                __addsf3x
+ .text.avr-libc.fplib
+                0x00001228        0xa /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(cmpsf2.o)
+                0x00001228                __lesf2
+                0x00001228                __nesf2
+                0x00001228                __eqsf2
+                0x00001228                __cmpsf2
+                0x00001228                __ltsf2
+ .text.avr-libc.fplib
+                0x00001232        0x8 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(divsf3.o)
+                0x00001232                __divsf3
+ .text.avr-libc.fplib
+                0x0000123a       0xdc /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(divsf3x.o)
+                0x0000125a                __divsf3x
+                0x00001260                __divsf3_pse
+ .text.avr-libc.fplib
+                0x00001316        0xe /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fixsfsi.o)
+                0x00001316                __fixsfsi
+ .text.avr-libc.fplib
+                0x00001324       0x5e /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+                0x00001324                __fixunssfsi
+ .text.avr-libc.fplib
+                0x00001382       0x7a /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(floatsisf.o)
+                0x00001382                __floatunsisf
+                0x00001386                __floatsisf
+ .text.avr-libc.fplib
+                0x000013fc       0x48 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_cmp.o)
+                0x000013fc                __fp_cmp
+ .text.avr-libc.fplib
+                0x00001444        0xc /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_inf.o)
+                0x00001444                __fp_inf
+ .text.avr-libc.fplib
+                0x00001450        0x6 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_nan.o)
+                0x00001450                __fp_nan
+ .text.avr-libc.fplib
+                0x00001456        0xe /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_pscA.o)
+                0x00001456                __fp_pscA
+ .text.avr-libc.fplib
+                0x00001464        0xe /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_pscB.o)
+                0x00001464                __fp_pscB
+ .text.avr-libc.fplib
+                0x00001472       0x22 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_round.o)
+                0x00001472                __fp_round
+ .text.avr-libc.fplib
+                0x00001494       0x44 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_split3.o)
+                0x00001494                __fp_split3
+                0x000014a4                __fp_splitA
+ .text.avr-libc.fplib
+                0x000014d8        0xe /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(fp_zero.o)
+                0x000014d8                __fp_zero
+                0x000014da                __fp_szero
+ .text.avr-libc.fplib
+                0x000014e6        0xa /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(gesf2.o)
+                0x000014e6                __gtsf2
+                0x000014e6                __gesf2
+ .text.avr-libc.fplib
+                0x000014f0        0x8 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(mulsf3.o)
+                0x000014f0                __mulsf3
+ .text.avr-libc.fplib
+                0x000014f8       0xd2 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                0x00001516                __mulsf3x
+                0x0000151c                __mulsf3_pse
+ .text.avr-libc
+                0x000015ca       0x1e /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strncpy.o)
+                0x000015ca                strncpy
+ .text.avr-libc
+                0x000015e8       0x2c /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(printf.o)
+                0x000015e8                printf
+ .text.avr-libc
+                0x00001614       0x46 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(sprintf.o)
+                0x00001614                sprintf
+ .text.avr-libc
+                0x0000165a      0x3d6 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                0x0000165a                vfprintf
+ .text.avr-libc
+                0x00001a30       0x16 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                0x00001a30                strnlen_P
+ .text.avr-libc
+                0x00001a46       0x16 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen.o)
+                0x00001a46                strnlen
+ .text.avr-libc
+                0x00001a5c       0x60 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(fputc.o)
+                0x00001a5c                fputc
+ .text.avr-libc
+                0x00001abc       0xbc /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+                0x00001abc                __ultoa_invert
+ .text.libgcc.prologue
+                0x00001b78       0x38 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
+                0x00001b78                __prologue_saves__
+ .text.libgcc.prologue
+                0x00001bb0       0x36 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
+                0x00001bb0                __epilogue_restores__
+                0x00001be6                        . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00001be6        0x0 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+                0x00001be6                exit
+                0x00001be6                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00001be6        0x4 /usr/lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+ *(.hightext)
+ *(.hightext*)
+ *(.progmemx.*)
+                0x00001bea                        . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+                0x00001bea                        _etext = .
+
+.data           0x00800100      0x16c load address 0x00001bea
+                0x00800100                        PROVIDE (__data_start = .)
+ *(.data)
+ *(.data*)
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.circularStringBuffer_print.str1.1
+                0x00800100      0x16b CMakeFiles/garageThermostat.elf.dir/lib/circularBuffer.c.obj
+                                  0x9 (size before relaxing)
+ .rodata.main.str1.1
+                0x0080026b      0x12f CMakeFiles/garageThermostat.elf.dir/avr/garageThermostat.c.obj
+ .rodata.hcsr04_read.str1.1
+                0x0080026b       0x35 CMakeFiles/garageThermostat.elf.dir/avr/hcsr04.c.obj
+ *(.gnu.linkonce.r*)
+                0x0080039a                        . = ALIGN (0x2)
+ *fill*         0x0080026b        0x1 
+                0x0080026c                        _edata = .
+                0x0080026c                        PROVIDE (__data_end = .)
+
+.bss            0x0080026c        0xd
+                0x0080026c                        PROVIDE (__bss_start = .)
+ *(.bss)
+ .bss           0x0080026c        0x6 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(iob.o)
+                0x0080026c                __iob
+ *(.bss*)
+ .bss.display_cntrl
+                0x00800272        0x7 CMakeFiles/garageThermostat.elf.dir/avr/motionControl.c.obj
+                0x00800272                display_cntrl
+ *(COMMON)
+                0x00800279                        PROVIDE (__bss_end = .)
+                0x00001bea                        __data_load_start = LOADADDR (.data)
+                0x00001d56                        __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800279        0x0
+                [!provide]                        PROVIDE (__noinit_start = .)
+ *(.noinit .noinit.* .gnu.linkonce.n.*)
+                [!provide]                        PROVIDE (__noinit_end = .)
+                0x00800279                        _end = .
+                [!provide]                        PROVIDE (__heap_start = .)
+                0x00000000                        __flmap_init_label = DEFINED (__flmap_noinit_start)?__flmap_noinit_start:0x0
+                0x00000000                        __flmap = DEFINED (__flmap)?__flmap:0x0
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                        __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x12
+ *(.comment)
+ .comment       0x00000000       0x12 CMakeFiles/garageThermostat.elf.dir/lib/circularBuffer.c.obj
+                                 0x13 (size before relaxing)
+ .comment       0x00000012       0x13 CMakeFiles/garageThermostat.elf.dir/avr/garageThermostat.c.obj
+ .comment       0x00000012       0x13 CMakeFiles/garageThermostat.elf.dir/avr/OLED_SSD1306.c.obj
+ .comment       0x00000012       0x13 CMakeFiles/garageThermostat.elf.dir/avr/adc.c.obj
+ .comment       0x00000012       0x13 CMakeFiles/garageThermostat.elf.dir/avr/display.c.obj
+ .comment       0x00000012       0x13 CMakeFiles/garageThermostat.elf.dir/avr/hcsr04.c.obj
+ .comment       0x00000012       0x13 CMakeFiles/garageThermostat.elf.dir/avr/i2c.c.obj
+ .comment       0x00000012       0x13 CMakeFiles/garageThermostat.elf.dir/avr/motionControl.c.obj
+ .comment       0x00000012       0x13 CMakeFiles/garageThermostat.elf.dir/avr/temperature_SHT41.c.obj
+ .comment       0x00000012       0x13 CMakeFiles/garageThermostat.elf.dir/avr/uart.c.obj
+ .comment       0x00000012       0x13 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(printf.o)
+ .comment       0x00000012       0x13 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(sprintf.o)
+ .comment       0x00000012       0x13 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .comment       0x00000012       0x13 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(fputc.o)
+ .comment       0x00000012       0x13 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(iob.o)
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x40 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega328p.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000      0x5f4
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x5f4 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega328p.o
+
+.debug_abbrev   0x00000000      0x5a2
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x5a2 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega328p.o
+
+.debug_line     0x00000000       0x1d
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000       0x1d /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega328p.o
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str      0x00000000      0x208
+ *(.debug_str)
+ .debug_str     0x00000000      0x208 /usr/lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega328p.o
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+OUTPUT(garageThermostat.elf elf32-avr)
+LOAD linker stubs
