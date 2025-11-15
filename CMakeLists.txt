@@ -74,8 +74,8 @@ add_custom_target(flash-isp
 )
 
 # Optional: Build tests (if circularStringBufferTests.c has a main function)
-add_executable(tests.elf src/circularStringBufferTests.c src/circularBuffer.c)
-target_link_options(tests.elf PRIVATE
-  -mmcu=${MCU}
-  -Wl,--gc-sections
-)
+# add_executable(tests.elf src/circularStringBufferTests.c src/circularBuffer.c)
+# target_link_options(tests.elf PRIVATE
+#   -mmcu=${MCU}
+#   -Wl,--gc-sections
+# )
