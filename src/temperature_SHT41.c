@@ -1,3 +1,10 @@
+#include <stdint.h>
+#include "i2c.h"
+#include <util/delay.h>
+#include "temperature_SHT41.h"
+
+// Forward declaration of crc8 function
+uint8_t crc8(uint8_t *data, uint8_t len);
 
 // ========== SHT41 Functions ==========
 uint8_t sht41_soft_reset(void) {

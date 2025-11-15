@@ -1,3 +1,5 @@
+#include <stdint.h>
+#include <avr/io.h>
 #include "uart.h"
 
 void uart_init(uint32_t baud) {

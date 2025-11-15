@@ -1,6 +1,8 @@
 #ifndef I2C_H
 #define I2C_H
 
+#include <stdint.h>
+
 // I2C definitions
 #define SCL_CLOCK 100000L
 #define TWI_FREQ ((F_CPU / SCL_CLOCK) - 16) / 2

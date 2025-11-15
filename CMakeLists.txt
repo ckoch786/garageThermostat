@@ -57,7 +57,7 @@ add_custom_command(TARGET ${PROJECT_NAME}.elf POST_BUILD
 
 # Flash with avrdude (Arduino Uno bootloader settings)
 set(PROGRAMMER arduino)
-set(PORT /dev/ttyUSB0)  # Change to COM port on Windows (e.g., COM3)
+set(PORT /dev/ttyACM0)  # Change to COM port on Windows (e.g., COM3)
 set(BAUD 115200)
 
 add_custom_target(flash

@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <util/delay.h>
+#include "uart.h"
 #include "hcsr04.h"
 
 void hcsr04_init(void)

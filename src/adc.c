@@ -1,3 +1,6 @@
+#include <avr/io.h>
+#include <util/delay.h>
+#include <stdint.h>
 #include "adc.h"
 
 void adc_init(void) {

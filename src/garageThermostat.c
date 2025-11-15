@@ -5,6 +5,7 @@
 #include <avr/io.h>
 #include <avr/pgmspace.h>
 #include <avr/interrupt.h>
+#include <stdio.h>
 
 #include "uart.h"
 #include "adc.h"
@@ -15,6 +16,7 @@
 #include "garageThermostat.h"
 #include "motionControl.h"
 #include "circularBuffer.h"
+#include "hcsr04.h"
 
 
 // ========== Main Program ==========

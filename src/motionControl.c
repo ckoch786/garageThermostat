@@ -1,3 +1,15 @@
+#include "motionControl.h"
+#include "display.h"
+#include "adc.h"
+#include "garageThermostat.h"
+#include <avr/io.h>
+#include <util/delay.h>
+#include <avr/interrupt.h>
+
+// Define the global display control instance
+struct display_control display_cntrl = {0};
+
+
 void motionControl_init(void) {
   motionControl_ddr |= (1 << motionControl_indicator_pin);  // Trig as output
 }

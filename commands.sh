@@ -28,7 +28,7 @@ while true; do
             ;;
         4)
             echo "Running: Flash..."
-            docker run --rm -v $(pwd):/work -w /work --device /dev/ttyUSB0:/dev/ttyACM0 garage-thermostat cmake --build build --target flash
+            docker run --rm -v $(pwd):/work -w /work --device /dev/ttyACM0:/dev/ttyACM0 garage-thermostat cmake --build build --target flash
             ;;
         5)
             echo "Running: Clean..."
